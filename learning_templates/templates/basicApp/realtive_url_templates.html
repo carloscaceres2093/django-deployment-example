@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+    <a href="{% url 'basicApp:other' %}">other</a><!--Se coloca el app_name del urls py y el name del mapeo y esta es la que usa django 2-->
+    <!-- <a href="basicApp/other.html">THe OTHER PAGE</a> -->
+    <a href="{% url 'admin:index' %}">admin</a>
+    <a href="{% url 'index' %}">index</a>
+  </body>
+</html>

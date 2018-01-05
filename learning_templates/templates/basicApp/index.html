@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{% extends "basicApp/base.html" %}
+{% load  corte  %}
+  {% block body_block %}
+    <h1>WELCOME   TO INDEX</h1>
+    <h2>This is index.html page showing</h2>
+    {{ text|upper }}
+    {{ number|add:"99" }}
+    {{ text|cut:'hello'}}
+  {% endblock %}
